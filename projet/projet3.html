@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inscription
+    </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(./image/arriere-plan-minimal-blanc-abstrait-moderne_84443-8335.avif);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .A {
+
+            color: blueviolet;
+            text-align: center;
+            list-style: none;
+            margin: 12px;
+        }
+
+        .B {
+
+            color: blueviolet;
+            text-align: center;
+            list-style: none;
+            margin: 12px;
+        }
+
+        a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        ul {
+
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            size: 4px;
+        }
+
+        p {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .F1 {
+            color: white;
+            background-color: black;
+            border-radius: 4px;
+            padding: 4px;
+            text-align: center;
+
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+
+        }
+
+        .F2 {
+            border-radius: 4px;
+            color: white;
+            background-color: black;
+
+            padding: 4px;
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: weight;
+            font-style: normal;
+
+
+        }
+
+        .TOP1 {
+            border-radius: 4px;
+            text-align: center;
+            margin-left: 300PX;
+            margin-right: 300px;
+            height: 300PX;
+            padding: 10px;
+
+        }
+
+        .TOP2 {
+            border-radius: 10px;
+            text-align: center;
+            margin-left: 300PX;
+            margin-right: 300px;
+            padding: 10px;
+
+
+
+
+
+        }
+
+        input {
+            border-color: green;
+            padding: 4px;
+            border-radius: 4px;
+            border-color: green;
+
+        }
+
+        .I1 {
+            background-color: greenyellow;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            padding: 4px;
+            border-radius: 4px;
+            color: WHITE;
+
+        }
+
+        .fin {
+            display: flex;
+            justify-content: center;
+        }
+
+
+        table {
+            border-collapse: collapse;
+
+            margin-left: 350px;
+
+        }
+
+        td,
+        tr {
+            border: solid 1px;
+
+            padding: 15px;
+
+        }
+
+        th {
+            border: solid 1px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 15px;
+        }
+
+        .form2 {
+            margin-left: 300px;
+            margin-right: 300px;
+
+            text-align: center;
+
+        }
+
+        .form1 {
+            margin-left: 300px;
+            margin-right: 300px;
+            text-align: center;
+        }
+
+        .table {
+
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class="A"><a href=".//projet3.html">Inscription</a></li>
+        <li class="B"><a href="./Projet3.1.html">Tableau des inscrits</a></li>
+    </ul>
+    <h1> Formulaire d'inscription</h1>
+    <p>Inscrivez-vous sur notre plateforme afin d'obtenir les dernières tendances dans le <br>
+        domaine du développement web
+    </p>
+    <form method="post" action="">
+        <div class="form1">
+            <fieldset class="TOP1">
+                <legend class="F1">Information personnels</legend>
+                <div> <label class="L1" for="Prénom">Prénom</label><br>
+                    <input type="text">
+                </div>
+                <div><label class="L2" for="Nom">Nom</label><br>
+                    <input type="text">
+                </div>
+                <div><label class="L3" for="Email">Email</label><br>
+                    <input type="email">
+                </div>
+                <div><label class="L4" for="Homme ou Femme"></label>
+                    <input type="radio" id="HOMME" name="HOMME" value="HOMME">
+                    <label for="HOMME">HOMME</label><br>
+                    <input type="radio" id="FEMME" name="FEMME" value="FEMME">
+                    <label for="FEMME">FEMME</label>
+                </div>
+                <div><label class="L5" for="Adresse">Adresse</label> <br>
+                    <select name="Adress" id="ADRESS">
+                        <option value="Dakar">Dakar</option>
+                        <option value="Thiès">Thiès</option>
+                        <option value="Kolda">Kolda</option>
+                        <option value="Matam">Matam</option>
+                    </select>
+                </div>
+                <div><label for="Photo">Photo de profil</label><br>
+                    <input type="file" name="Parcourir">
+                </div>
+            </fieldset>
+        </div>
+        <div class="form2">
+            <fieldset class="TOP2">
+                <legend class="F2">Coordonnées</legend>
+                <div><label class="L6" for="Numéro">Numéro de téléphone</label> <br>
+                    <input type="number" placeholder="+221 77 800 00 00 ">
+                </div>
+                <div><label for="OUI OU NON">Ce numéro est-il sur whatsapp ?</label><br>
+                    <input type="radio" id="OUI" name="Whatsapp" value="OUI">
+                    <label for="OUI">OUI</label>
+                    <input type="radio" id="NON" name="Whatsapp" value="NON">
+                    <label for="NON">NON</label>
+
+                </div>
+        </div>
+
+
+
+
+        </fieldset>
+        <div class="fin"><input class="I1" type="submit"></div>
+
+
+    </form>
+
+</body>
+
+</html>
